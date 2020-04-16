@@ -3,10 +3,15 @@ public class Cell {
     private boolean alive = false;
 
     public void update() {
-        if (livingNeighbours == 3 && !alive) {
+        if (livingNeighbours <= 2 && alive) {
+            alive = false;
+        }
+        else if (alive && livingNeighbours > 3) {
+            alive = false;
+        }
+        else if (!alive && livingNeighbours == 3) {
             alive = true;
         }
-        else alive = livingNeighbours == 3 || livingNeighbours == 2 && alive;
     }
 
     public int getLivingNeighbours() {
