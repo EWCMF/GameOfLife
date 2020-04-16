@@ -19,6 +19,19 @@ public class Game {
             for (int j = 0; j < board[i].length; j++) {
                 Cell currentCell = board[i][j];
                 currentCell.setLivingNeighbours(0);
+
+                // non special cases
+                if (i > 0 && i < board.length - 1 && j > 0 && j < board[i].length - 1) {
+                    for (int k = -1; k <= 1; k++) {
+                        for (int l = -1; l <= 1; l++) {
+                            if (board[i + k][j + l].isAlive()) {
+                                increaseLivingNeighbour(currentCell);
+                            }
+                        }
+                    }
+                    continue;
+                }
+
                 // left
                 if (i == 0 && j > 0 && j < board[i].length - 1) {
                     for (int k = 0; k < 1; k++) {
@@ -29,43 +42,46 @@ public class Game {
                         }
 
                     }
+                    continue;
                 }
                 // right
-                else if (i == board.length - 1 && j > 0 && j < board[i].length - 1) {
+                if (i == board.length - 1 && j > 0 && j < board[i].length - 1) {
                     for (int k = -1; k < 0; k++) {
                         for (int l = -1; l <= 1; l++) {
                             if (board[i + k][j + l].isAlive()) {
                                 increaseLivingNeighbour(currentCell);
                             }
                         }
-
                     }
+                    continue;
                 }
 
                 // top
-                else if (j == 0 && i > 0 && i < board.length - 1) {
-                    for (int k = -1; k < 1; k++) {
+                if (j == 0 && i > 0 && i < board.length - 1) {
+                    for (int k = -1; k <= 1; k++) {
                         for (int l = 0; l <= 1; l++) {
                             if (board[i + k][j + l].isAlive()) {
                                 increaseLivingNeighbour(currentCell);
                             }
                         }
                     }
+                    continue;
                 }
 
                 // bottom
-                else if (j == board[i].length - 1 && i > 0 && i < board.length - 1) {
-                    for (int k = -1; k < 1; k++) {
+                if (j == board[i].length - 1 && i > 0 && i < board.length - 1) {
+                    for (int k = -1; k <= 1; k++) {
                         for (int l = -1; l <= 0; l++) {
                             if (board[i + k][j + l].isAlive()) {
                                 increaseLivingNeighbour(currentCell);
                             }
                         }
                     }
+                    continue;
                 }
 
                 // top-left
-                else if (i == 0 && j == 0) {
+                if (i == 0 && j == 0) {
                     for (int k = 0; k <= 1; k++) {
                         for (int l = 0; l <= 1; l++) {
                             if (board[i + k][j + l].isAlive()) {
@@ -73,10 +89,11 @@ public class Game {
                             }
                         }
                     }
+                    continue;
                 }
 
                 // top-right
-                else if (i == board.length - 1 && j == 0) {
+                if (i == board.length - 1 && j == 0) {
                     for (int k = -1; k <= 0; k++) {
                         for (int l = 0; l <= 1; l++) {
                             if (board[i + k][j + l].isAlive()) {
@@ -84,10 +101,11 @@ public class Game {
                             }
                         }
                     }
+                    continue;
                 }
 
                 // bottom-left
-                else if (i == 0 && j == board[i].length - 1) {
+                if (i == 0 && j == board[i].length - 1) {
                     for (int k = 0; k <= 1; k++) {
                         for (int l = -1; l <= 0; l++) {
                             if (board[i + k][j + l].isAlive()) {
@@ -95,22 +113,13 @@ public class Game {
                             }
                         }
                     }
+                    continue;
                 }
 
                 // bottom-right
-                else if (i == board.length - 1 && j == board[i].length - 1) {
+                if (i == board.length - 1 && j == board[i].length - 1) {
                     for (int k = -1; k <= 0; k++) {
                         for (int l = -1; l <= 0; l++) {
-                            if (board[i + k][j + l].isAlive()) {
-                                increaseLivingNeighbour(currentCell);
-                            }
-                        }
-                    }
-                }
-                // The rest
-                else {
-                    for (int k = -1; k <= 1; k++) {
-                        for (int l = -1; l <= 1; l++) {
                             if (board[i + k][j + l].isAlive()) {
                                 increaseLivingNeighbour(currentCell);
                             }
