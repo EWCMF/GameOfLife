@@ -7,8 +7,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -26,10 +27,9 @@ public class Start extends Application {
 
     @Override
     public void start(Stage stage) {
-        gridPane.setGridLinesVisible(true);
-        gridPane.setVgap(2);
-        gridPane.setHgap(2);
         gridPane.setStyle("-fx-border-color: black");
+        gridPane.setHgap(4);
+        gridPane.setVgap(4);
         iterationLabel = new Label();
         game.populateBoard(BOARD_X, BOARD_Y);
         draw();
@@ -57,6 +57,7 @@ public class Start extends Application {
         vBox.setSpacing(48);
         Scene scene = new Scene(vBox);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.setTitle("Game of Life");
         stage.show();
     }
@@ -67,16 +68,16 @@ public class Start extends Application {
         gridPane.getChildren().clear();
         for (int i = 0; i < game.getBoard().length; i++) {
             for (int j = 0; j < game.getBoard()[i].length; j++) {
-                Pane pane = new Pane();
-                pane.setPrefWidth(6);
-                pane.setPrefHeight(6);
+                Rectangle rectangle = new Rectangle();
+                rectangle.setHeight(8);
+                rectangle.setWidth(8);
                 if (game.getBoard()[i][j].isAlive()) {
-                    pane.setStyle("-fx-background-color: black");
+                    rectangle.setFill(Color.BLACK);
                 }
                 else {
-                    pane.setStyle("-fx-background-color: white");
+                    rectangle.setFill(Color.WHITE);
                 }
-                gridPane.add(pane, i, j);
+                gridPane.add(rectangle, i, j);
             }
         }
     }
