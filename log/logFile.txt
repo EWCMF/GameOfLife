@@ -1,0 +1,5 @@
+Actions:
+Game of Life started at iteration 1
+
+Game of Life stopped at iteration 13
+

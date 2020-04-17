@@ -13,6 +13,10 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class Start extends Application {
     // Change board size here.
     private final int BOARD_X = 50;
@@ -41,13 +45,36 @@ public class Start extends Application {
 
         Button button = new Button("Start/stop");
         button.setOnAction(actionEvent -> {
+            String status;
             if (timerStarted) {
                 timer.pause();
                 timerStarted = false;
+                status = "stopped at iteration " + iteration;
             } else {
                 timer.play();
                 timerStarted = true;
+                status = "started at iteration " + iteration;
             }
+            Thread thread = new Thread(() -> {
+                File file = new File("log/logFile.txt");
+
+                try {
+                    if (file.exists()) {
+                        FileWriter writer = new FileWriter(file, true);
+                        writer.append("Game of Life ").append(status).append("\n\n");
+                        writer.close();
+                    }
+                    else {
+                        FileWriter writer = new FileWriter(file);
+                        writer.write("Actions:\n");
+                        writer.write("Game of Life " + status + "\n\n");
+                        writer.close();
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            });
+            thread.start();
         });
         HBox hBox = new HBox(iterationLabel, button);
         hBox.setSpacing(10);
