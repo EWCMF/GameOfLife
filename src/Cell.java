@@ -3,7 +3,7 @@ public class Cell {
     private boolean alive = false;
 
     public void update() {
-        if (livingNeighbours <= 2 && alive) {
+        if (livingNeighbours < 2 && alive) {
             alive = false;
         }
         else if (alive && livingNeighbours > 3) {
