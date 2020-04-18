@@ -3,12 +3,17 @@ public class Cell {
     private boolean alive = false;
 
     public void update() {
+        // Rules for cell here.
+
+        // Death of loneliness.
         if (livingNeighbours < 2 && alive) {
             alive = false;
         }
+        // Death of overpopulation.
         else if (alive && livingNeighbours > 3) {
             alive = false;
         }
+        // Birth
         else if (!alive && livingNeighbours == 3) {
             alive = true;
         }

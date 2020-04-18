@@ -1,5 +1,337 @@
 Actions:
-Game of Life started at iteration 1
+Cell revived at 25, 21
 
-Game of Life stopped at iteration 13
+Cell revived at 26, 21
+
+Cell revived at 26, 22
+
+Cell revived at 25, 22
+
+Game of life started at iteration 1
+
+Game of life stopped at iteration 23
+
+Cell revived at 22, 36
+
+Cell revived at 23, 36
+
+Cell revived at 23, 37
+
+Cell revived at 22, 37
+
+Game of life started at iteration 23
+
+Game of life stopped at iteration 44
+
+Cell revived at 27, 13
+
+Cell revived at 27, 12
+
+Cell revived at 25, 13
+
+Cell revived at 24, 11
+
+Cell revived at 25, 7
+
+Cell revived at 25, 6
+
+Cell revived at 26, 6
+
+Game of life started at iteration 1
+
+Game of life stopped at iteration 141
+
+Game of life started at iteration 1
+
+Game of life stopped at iteration 186
+
+Game of life started at iteration 186
+
+Game of life stopped at iteration 197
+
+Cell revived at 29, 31
+
+Cell revived at 27, 31
+
+Cell revived at 17, 1
+
+Cell revived at 15, 1
+
+Cell revived at 38, 8
+
+Cell revived at 40, 6
+
+Cell revived at 42, 8
+
+Cell revived at 40, 10
+
+Cell revived at 40, 9
+
+Cell revived at 40, 8
+
+Cell revived at 41, 8
+
+Cell revived at 39, 8
+
+Cell revived at 40, 7
+
+Game of life started at iteration 197
+
+Game of life stopped at iteration 435
+
+Game of life started at iteration 1
+
+Game of life stopped at iteration 164
+
+Game of life started at iteration 1
+
+Game of life started at iteration 1
+
+Game of life stopped at iteration 53
+
+Game of life started at iteration 53
+
+Game of life stopped at iteration 197
+
+Cell revived at 28, 44
+
+Cell revived at 29, 44
+
+Cell revived at 29, 43
+
+Cell revived at 28, 43
+
+Game of life started at iteration 197
+
+Game of life stopped at iteration 453
+
+Game of life started at iteration 1
+
+Game of life stopped at iteration 375
+
+Cell revived at 49, 2
+
+Game of life started at iteration 375
+
+Game of life stopped at iteration 404
+
+Game of life started at iteration 404
+
+Game of life stopped at iteration 420
+
+Cell revived at 25, 35
+
+Game of life started at iteration 420
+
+Game of life stopped at iteration 429
+
+Cell revived at 26, 35
+
+Cell revived at 25, 35
+
+Cell revived at 24, 35
+
+Cell revived at 25, 34
+
+Cell revived at 25, 36
+
+Game of life started at iteration 429
+
+Game of life stopped at iteration 476
+
+Cell revived at 13, 43
+
+Cell revived at 13, 45
+
+Game of life started at iteration 476
+
+Game of life stopped at iteration 489
+
+Cell revived at 14, 44
+
+Cell revived at 12, 44
+
+Cell revived at 13, 44
+
+Cell revived at 13, 45
+
+Cell revived at 13, 43
+
+Game of life started at iteration 489
+
+Game of life stopped at iteration 504
+
+Game of life started at iteration 1
+
+Game of life stopped at iteration 450
+
+Cell revived at 33, 47
+
+Cell revived at 31, 47
+
+Game of life started at iteration 450
+
+Game of life stopped at iteration 468
+
+Cell revived at 49, 8
+
+Cell revived at 48, 9
+
+Cell revived at 48, 8
+
+Game of life started at iteration 468
+
+Game of life stopped at iteration 531
+
+Game of life started at iteration 1
+
+Game of life stopped at iteration 576
+
+Game of life started at iteration 1
+
+Game of life stopped at iteration 87
+
+Cell revived at 60, 72
+
+Cell revived at 61, 72
+
+Cell revived at 61, 71
+
+Cell revived at 60, 71
+
+Cell revived at 60, 73
+
+Cell revived at 61, 73
+
+Cell revived at 62, 73
+
+Cell revived at 62, 72
+
+Cell revived at 62, 71
+
+Game of life started at iteration 87
+
+Game of life stopped at iteration 703
+
+Cell revived at 27, 69
+
+Game of life started at iteration 703
+
+Game of life stopped at iteration 1313
+
+Cell revived at 56, 42
+
+Cell revived at 55, 41
+
+Game of life started at iteration 1313
+
+Game of life stopped at iteration 1334
+
+Cell revived at 55, 33
+
+Cell revived at 55, 31
+
+Game of life started at iteration 1334
+
+Game of life stopped at iteration 1357
+
+Cell revived at 56, 32
+
+Cell revived at 55, 32
+
+Cell revived at 55, 31
+
+Cell revived at 54, 32
+
+Cell revived at 55, 33
+
+Game of life started at iteration 1357
+
+Game of life stopped at iteration 1383
+
+Cell revived at 80, 93
+
+Cell revived at 79, 93
+
+Cell revived at 78, 93
+
+Cell revived at 79, 92
+
+Cell revived at 79, 94
+
+Game of life started at iteration 1383
+
+Game of life stopped at iteration 1399
+
+Cell revived at 27, 68
+
+Cell revived at 28, 69
+
+Cell revived at 28, 68
+
+Cell revived at 27, 69
+
+Game of life started at iteration 1399
+
+Game of life stopped at iteration 1407
+
+Cell revived at 29, 69
+
+Cell revived at 29, 68
+
+Cell revived at 29, 70
+
+Cell revived at 28, 70
+
+Cell revived at 27, 70
+
+Game of life started at iteration 1407
+
+Game of life stopped at iteration 1438
+
+Cell revived at 74, 48
+
+Cell revived at 73, 48
+
+Cell revived at 75, 48
+
+Cell revived at 75, 47
+
+Cell revived at 75, 46
+
+Game of life started at iteration 1438
+
+Game of life stopped at iteration 1502
+
+Cell revived at 75, 47
+
+Cell revived at 74, 47
+
+Cell revived at 73, 47
+
+Cell revived at 74, 46
+
+Cell revived at 74, 48
+
+Game of life started at iteration 1502
+
+Game of life stopped at iteration 1514
+
+Cell revived at 83, 26
+
+Cell revived at 82, 26
+
+Cell revived at 81, 26
+
+Cell revived at 82, 25
+
+Cell revived at 82, 27
+
+Game of life started at iteration 1514
+
+Game of life stopped at iteration 1537
+
+Game of life started at iteration 1
+
+Game of life stopped at iteration 213
 
